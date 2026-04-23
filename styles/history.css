@@ -1,0 +1,45 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-size: 16px;
+    box-sizing: border-box;
+font-family: "Black Ops One", system-ui;
+    color:burlywood;
+}
+
+.hero{
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center;     /*vertical*/
+    height: 100vh;           /*or whatever height your hero is*/
+    background-image: url("../images/history-hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.hero h1 {
+    color: white;
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main section {
+    flex-grow: 1;
+    width: 30%;
+    background-color: cornsilk;
+    margin: 10px;
+    border:solid burlywood 2px;
+    border-radius: 5px;
+    padding:5px;
+}
+ .tim {
+    flex-grow: 2 !important;
+    background-color:lightblue;
+ }
