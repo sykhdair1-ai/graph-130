@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/nav.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="page-title">
+            <p>GRAPH 130</p>
+        </div>
+    <!--nav.html-->
+    <nav class="hamish">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="theater.html">Theater Bill</a></li>
+            <li><a href="history-upgrade.html">History</a></li>
+            <li><a href="stewRecipie.html">Stew</a></li>
+            <li><a href="cascade.html">Cascades</a></li>
+            <li><a href="optomizing-images.html">Optomized Images</a></li>
+            <li><a href="orcas.html">Orcas Island</a></li>
+            <li><a href="lopez.html">Lopez Island</a></li>
+            <li><a href="grid-based-project.html">Grids</a></li>
+
+        </ul>
+    </nav>
+
+
+</body>
+</html>
