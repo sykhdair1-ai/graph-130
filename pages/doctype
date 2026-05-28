@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Chris's Website</title>
+    <link href="styles/homepage.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>chris larson</h1>
+        <nav>
+            <a href="#work"><p>work</p></a>
+            <a href="#cv"></p></a>
+            <a href="#contact"><p>contact</p></a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img class="faze" src="images/hoff.png" alt="profile image">
+            <h3>School & Course</h3>
+            <p>EvCC and taking graph 130</p>
+            <h3>How many quarters have you attended EvCC?</h3>
+            <p>I have been here for decades</p>
+            <h3>What degree/cerfitifcate program are you pursuing</h3>
+            <p>graphic design and web design</p>
+            <h3>Why did you choose this degree/certificate?</h3>
+            <p>I thought it was cool and a fun way to make a living.</p>
+            <h3>What artist/designer inspires you? Why?</h3>
+            <p>John Singer Sargeant is an artist that inspries me recently</p>
+            <h3>What is your favorite color? (Please, use a hex code and style your answer with that color.)</h3>
+             <p> <span style="color:#007efc">I like blue</span> #007efc</p>
+        </aside>
+        <article id="work">
+            <section class="project" id="theater">
+                <a href="pages/theater.html"></a>stew project</p></a>
+            </section>
+            <section class="project" id="cascades">
+                <a href="pages/cascades.html"><p>cascades project</p></a>
+            </section>
+            <section class="project" id="images">
+                <a href="pages/opt-image.html"><p>optomizing images project</p></a>
+            </section>
+            <section class="project" id="fluid">
+                <a href="pages/fluid.html"><p>fluid dimensions project</p></a>
+            </section>
+            <section class="project" id="lopez">
+                <a href="pages/lopez.html"><p>Lopez Island project</p></a>
+            </section>
+            <section class="project" id="mobile-cascade">
+                <a href="pages/mobile-cascade.html"></p>Cascade project: mobile responsive</p></a>
+            </section>
+            <!--<section class="project" id="history">
+                <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                    <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                    <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                    <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                    <a href="pages/history-refractor.html"></p>history project</p></a>
+                </section>
+                <section class="project" id="history">
+                    <a href="pages/history-refractor.html"><p>history project</p></a>
+                </section> -->
+
+        </article>
+    </main>
+</body>
+</html>
