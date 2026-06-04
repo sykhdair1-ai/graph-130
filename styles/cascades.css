@@ -4,7 +4,7 @@
 body {
     background-image: url("../images/cascade_mountains-bg.jpg");
     background-repeat: no-repeat;
-    background-attatchment: fixed;
+    background-attachment: fixed;
     background-size:cover;
     margin:0px;
     padding:0px;
@@ -34,7 +34,7 @@ header h2 {
 nav ul {
     text-align: center;
     list-style: none;
-    background-color#44a5b5;
+    background-color:#44a5b5;
     margin-bottom: 15px;
 }
 
@@ -79,7 +79,7 @@ footer p {
 
 .sidebar {
     float:left;
-    width:300px;
+    width:240px;
     background-color:rgba(255,255,255,.4);
     color:#44a5b5;
     padding: 4px;
@@ -111,5 +111,5 @@ h1,h2,h3 {
 }
 
 p,li {
-    font-family: font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
