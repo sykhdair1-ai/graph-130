@@ -25,7 +25,7 @@ body {
 
 nav a {
     border-left: solid-black 1px;
-    justify content: center;
+    justify-content: center;
     align-content: center;
     padding-left: 15px;
     text-decoration: none;
@@ -105,22 +105,25 @@ article {
 
 }
 #cascades {
-    background-image: url (../images/JPEG/cascade1.jpg);
+    background-image: url(../images/cascade_mountains-bg.jpg);
 
 }
 #images {
     background-image: url(../images/camping10.jpg);
 }
 #fluid {
-    background-image: url(../images/lee.png);
+    background-image: url(../images/bruce-lee-1.png);
 }
 #disco {
-    background-image: url(../images/JPEG/disco.jpg);
+    background-image: url(../images/disco.png);
 
 }
 #lopez {
     background-image: url(../images/sj-images/sj-059.jpg);
 }
 #mobile-cascade {
-    background-image: url(../images/JPEG/cascade2.jpg);
+    background-image: url(../images/camping06.jpg);
+}
+#stew {
+    background-image: url(../images/hero.jpg);
 }
