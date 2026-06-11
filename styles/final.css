@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*CSS Document */
+
+body {
+    background-image: url("../images/wildlife.webp");
+    text-align: left;
+}
+
+.image-left {
+    float:left;
+}
