@@ -3,9 +3,19 @@
 
 body {
     background-image: url("../images/wildlife.webp");
-    text-align: left;
+    text-align: center;
 }
 
 .image-left {
     float:left;
+    <div class="pure-g">
+}
+
+main {
+    grid-auto-rows:minmax(400px, auto);
+    grid-template-areas:
+    "first second sidebar"
+    "first middle sidebar"
+    "first last last"
+    "bottom1 bottom1 bottom2"
 }
