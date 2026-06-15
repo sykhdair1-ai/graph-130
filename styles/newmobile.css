@@ -1,5 +1,5 @@
 @media screen and (max-width:750px) {
-    nav, main, footer, article, main ul, header, nav ul, .leroy , .loki, .pure-u-1-3, .pure-u-2-3, .hero p {
+    nav, main, footer, article, main ul, header, nav ul, .leroy , .loki, .pure-u-1-3, .pure-u-2-3, .hero p, pure-u-1-4 {
         width:90%;
         display: block;
         margin:auto;
