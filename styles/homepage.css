@@ -87,8 +87,10 @@ article {
     font-size:25px;
 }
 .project a {
+    color: white;
     padding: 100px 200px;
-    text-decoraton: none;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 /*individual project background images*/
