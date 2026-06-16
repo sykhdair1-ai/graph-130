@@ -29,6 +29,6 @@
             </div>
         </nav>
     </nav>
-    <script src="../scripts/mobile-nav.js"></script>
+    <script src="../scripts/new-nav.css.js"></script>
 </body>
 </html>

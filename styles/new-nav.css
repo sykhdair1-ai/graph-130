@@ -33,3 +33,58 @@
 .kiwi a:hover {
     background-color: 
 }
+
+*/ begin mobile nav styles */
+
+.toggle-button {
+    position:absolute;
+    top:10px;
+    right:16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .kiwi {
+        display: none;
+        width: 100%;
+    }
+
+    .kiwi ul {
+        width:100%;
+        flex-direction: column;
+    }
+    .kiwi ul li {
+        text-align:center;
+    }
+    .kiwi ul li a {
+        padding:8px 16px;
+    }
+    .kiwi:active {
+        display: flex;
+    }
+    nav a {
+        border:0px;
+    }
+
+}
