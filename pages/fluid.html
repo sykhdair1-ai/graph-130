@@ -15,43 +15,12 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-<<<<<<< HEAD
-
-fetch('nav.html')
-
- .then(response => response.text())
-
- .then(data => {
-
-document.getElementById('nav-placeholder').innerHTML = data;
-
-// Wait until nav.html is loaded, THEN attach toggle behavior
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-
-const navbarLinks = document.getElementsByClassName('kiwi')[0];
-
-if (toggleButton && navbarLinks) {
-
-toggleButton.addEventListener('click', () => {
-
-navbarLinks.classList.toggle('active');
-
- });
-
- }
-
- });
-
-</script>
-=======
             fetch('nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
             });
         </script>
->>>>>>> e5b1e9fa048365223e5b846f06a19616c394c95a
     <header>
         <nav class="pure-g">
             <a class="pure-u-1-7" href="../index.html">Home</a>
