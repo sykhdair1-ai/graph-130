@@ -64,9 +64,8 @@ aside p {
 /* make header image full-bleed beyond body padding */
 .full-bleed {
     display: block;
-    width: 100vw;
     max-width: none;
-    margin-left: calc(50% - 50vw);
+    margin-left: 50px;
     height: auto;
     object-fit: cover;
 }
