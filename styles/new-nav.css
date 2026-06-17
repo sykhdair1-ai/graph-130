@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-.nav-bar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-}
-
-.page-title p {
-    font-size: 22px;
-    margin: 8px;
-}
-
-.kiwi {
-=======
 .navbar-links {
->>>>>>> d1350a47901f2528cc3871e44189c82b5a70da30
     background-color: #f0f0f0;
     border-radius: 5px;
     padding: 10px;
@@ -98,11 +80,7 @@
     .navbar-links ul li a {
         padding:8px 16px;
     }
-<<<<<<< HEAD
-    .kiwi.active {
-=======
     .navbar-links.active {
->>>>>>> d1350a47901f2528cc3871e44189c82b5a70da30
         display: flex;
     }
     nav a {
