@@ -99,7 +99,7 @@ main {
 /* make header image full-bleed beyond body padding */
 .full-bleed {
     display: block;
-    width: none;
+    width: 700px;
     max-width: none;
     margin-left: 0px;
     height: auto;
