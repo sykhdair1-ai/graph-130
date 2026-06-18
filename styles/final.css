@@ -2,11 +2,25 @@
 /*CSS Document */
 
 body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     text-align: center;
     margin: 50px;
-    padding:1px;
+    padding: 1px;
+}
+
+.corner-image {
+    position: absolute;
+    left: 360px;
+    bottom: 150px;
+    width: 280px;
+    max-width: 36vw;
+    height: 360px;
+    z-index: 1;
 }
 
 main {
@@ -26,24 +40,32 @@ header .pure-g {
 }
 
 header ul {
-    display: flex;
+    display: list-item;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 0 0 1rem;
+    gap: 5px;
+    padding: 2px;
+    margin: 1px;
     list-style: none;
 }
 
 header ul li {
     flex: 1;
     text-align: center;
-    padding: 1rem 0.5rem;
-    background: rgba(255,255,255,0.8);
-    border-radius: 0.5rem;
+    padding: 15px;
+    background: white;
+    border-radius: 1px;
 }
 
-header ul li a,
+header ul li.active {
+    background: light gray;
+    font-weight: 700;
+}
+
+header ul li.active a:visited {
+    color: inherit;
+}
+
 header ul li a:visited {
     display: block;
     color: inherit;
@@ -61,12 +83,25 @@ aside p {
     margin: 10px;
 }
 
+.page-footer {
+    width: 100%;
+    padding: 5px;
+    background: brown;
+    text-align: center;
+    box-sizing: border-box;
+    max-width:600px;
+}
+
+main {
+    flex: 1;
+}
+
 /* make header image full-bleed beyond body padding */
 .full-bleed {
     display: block;
+    width: none;
     max-width: none;
-    margin-left: 50px;
+    margin-left: 0px;
     height: auto;
     object-fit: cover;
 }
-
