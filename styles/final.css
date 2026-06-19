@@ -3,24 +3,33 @@
 
 body {
     position: relative;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     text-align: center;
-    margin: 50px;
-    padding: 1px;
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+.corner-image,
+.right-corner-corner-image {
+    position: absolute;
+    width: 280px;
+    max-width: 35vw;
+    height: auto;
+    z-index: 1;
 }
 
 .corner-image {
-    position: absolute;
-    left: 600px;
-    bottom: 120px;
-    width: 280px;
-    max-width: 36vw;
-    height: 360px;
-    z-index: 1;
+    left: 20px;
+    bottom: 20px;
+}
+
+.right-corner-corner-image {
+    right: 20px;
+    bottom: 20px;
 }
 
 main {
@@ -31,6 +40,7 @@ main {
     padding: 20px;
     display: grid;
     gap: 15px;
+    box-sizing: border-box;
 }
 
 header .pure-g {
@@ -40,36 +50,45 @@ header .pure-g {
 }
 
 header ul {
-    display: list-item;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    padding: 2px;
-    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+header ul a {
+    flex: 1 1 150px;
+    min-width: 120px;
+    text-decoration: none;
+}
+
 header ul li {
+    display: block;
     flex: 1;
     text-align: center;
-    padding: 15px;
-    background: white;
-    border-radius: 1px;
+    padding: 12px 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    margin: 0;
 }
 
 header ul li.active {
-    background: light gray;
+    background: #ddd;
     font-weight: 700;
 }
 
+header ul li a,
+header ul li a:visited,
+header ul li.active a,
 header ul li.active a:visited {
-    color: inherit;
-}
-
-header ul li a:visited {
     display: block;
     color: inherit;
-    text-decoration: sans serif;
+    text-decoration: none;
 }
 
 aside {
@@ -80,27 +99,106 @@ aside {
 }
 
 aside p {
-    margin: 10px;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .page-footer {
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     background: brown;
+    color: white;
     text-align: center;
     box-sizing: border-box;
-    max-width:800px;
+    max-width: 800px;
+    margin: 20px auto 0;
+    border-radius: 6px;
 }
 
-main {
-    flex: 1;
+@media (max-width: 900px) {
+    body {
+        margin: 15px;
+    }
+
+    header ul {
+        justify-content: center;
+    }
+
+    header ul a {
+        flex: 1 1 100%;
+    }
+
+    header ul li {
+        min-width: auto;
+    }
+
+    .full-bleed {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    aside {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .page-footer {
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .corner-image,
+    .right-corner-corner-image {
+        width: 45vw;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 10px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    header ul {
+        gap: 0.25rem;
+    }
+
+    header ul a {
+        flex: 1 1 100%;
+    }
+
+    header ul li {
+        padding: 10px;
+    }
+
+    .corner-image,
+    .right-corner-corner-image {
+        width: 50vw;
+        max-width: 160px;
+        left: 12px;
+        right: auto;
+        bottom: 12px;
+    }
 }
 
 /* make header image full-bleed beyond body padding */
 .full-bleed {
     display: block;
-    width: 700px;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
     margin-left: 0px;
     height: auto;
     object-fit: cover;
